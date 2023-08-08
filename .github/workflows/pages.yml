@@ -22,7 +22,7 @@ jobs:
       - name: Install Trunk
         run: wget -qO- https://github.com/thedodd/trunk/releases/latest/download/trunk-x86_64-unknown-linux-gnu.tar.gz | tar -xzf-
       - name: Build Website
-        run: ./trunk build --release && cp favicon.svg dist
+        run: ./trunk build --release && cp public/favicon.svg dist
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v1
         with:
