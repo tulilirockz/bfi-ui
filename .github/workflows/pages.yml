@@ -37,7 +37,7 @@ jobs:
       - name: Build Website
         run: ./trunk build --release && cp public/favicon.svg dist
       - name: Upload artifacts
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
